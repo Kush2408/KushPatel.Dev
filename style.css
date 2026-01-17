@@ -1657,6 +1657,52 @@ footer {
 
 @media screen and (max-width:998px) {
 
+    /* --- About section responsive update --- */
+    .info-dp-section {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        margin-top: 30px;
+        align-items: center;
+    }
+    .about-info {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 1.2rem;
+    }
+    .about-info p {
+        font-size: 2.2rem;
+        line-height: 1.5;
+        word-break: break-word;
+    }
+    .dp {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 0.7em;
+    }
+    .dp img {
+        width: 55vw;
+        min-width: 130px;
+        max-width: 260px;
+        height: auto;
+        border-radius: 50%;
+        object-fit: cover;
+        box-shadow: 0 6px 24px #0002;
+    }
+    /* Remove box-shadow overlays for better mobile look */
+    .dp::before,
+    .dp::after {
+        display: none !important;
+    }
+    /* --- End About section responsive update --- */
+
+
     #hamburger-button,
     .hamburger {
         background-color: transparent
