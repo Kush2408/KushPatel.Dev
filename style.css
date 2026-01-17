@@ -1,3 +1,7 @@
+* {
+  font-family: 'Poppins', sans-serif;
+} 
+
 #labelforsetting,
 #labelforvisualmode,
 #switchforvisualmode:checked+#labelforvisualmode {
@@ -534,7 +538,7 @@ noscript {
 
 .dp::after,
 .dp::before {
-    height: 300px;
+    height: 400px;
     z-index: -2;
     content: ""
 }
@@ -590,7 +594,8 @@ noscript {
     font-weight: 600;
     width: fit-content;
     display: flex;
-    align-items: flex-end
+    align-items: flex-end;
+    margin-top: 60px
 }
 
 #name,
@@ -974,7 +979,14 @@ noscript {
     gap: 10px
 }
 
-.dp img,
+.dp img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    object-fit: contain;
+    display: block;
+}
+
 .dp::after,
 .dp::before {
     width: 300px
@@ -1003,17 +1015,23 @@ noscript {
 .info-dp-section {
     width: 100%;
     display: flex;
-    margin-top: 30px
+    margin-top: 30px;
+    gap: 40px;
+    align-items: flex-start;
 }
 
 .about-info {
     width: 60%;
     display: flex;
-    flex-direction: column
+    flex-direction: column;
+    min-width: 0;
+    flex: 1;
 }
 
 .about-info p {
-    line-height: 25px
+    line-height: 1.6;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
 }
 
 .dp {
@@ -1021,7 +1039,9 @@ noscript {
     display: flex;
     align-items: flex-start;
     justify-content: center;
-    position: relative
+    position: relative;
+    min-width: 0;
+    flex-shrink: 0;
 }
 
 .dp::before {
@@ -1570,6 +1590,26 @@ footer {
     }
 }
 
+@media screen and (max-width:1400px) and (min-width:1201px) {
+    .about-section {
+        width: 70%;
+    }
+
+    .info-dp-section {
+        gap: 35px;
+    }
+
+    .dp img {
+        max-width: 290px;
+    }
+
+    .dp::after,
+    .dp::before {
+        width: 290px;
+        height: 290px;
+    }
+}
+
 @media screen and (max-width:1200px) {
     html {
         font-size: 60%
@@ -1587,6 +1627,20 @@ footer {
         flex-direction: column;
         align-items: center;
         justify-content: center
+    }
+
+    .info-dp-section {
+        gap: 30px;
+    }
+
+    .dp img {
+        max-width: 280px;
+    }
+
+    .dp::after,
+    .dp::before {
+        width: 280px;
+        height: 280px;
     }
 
     .logo:hover {
@@ -1753,6 +1807,10 @@ footer {
         width: fit-content
     }
 
+    .about-section {
+        width: 85%;
+    }
+
     .about-info,
     .dp,
     .info-dp-section {
@@ -1762,17 +1820,39 @@ footer {
 
     .info-dp-section {
         flex-direction: column;
-        margin-top: 30px;
-        gap: 30px
+        margin-top: 40px;
+        gap: 40px;
+        align-items: center;
     }
 
     .about-info {
-        flex-direction: column
+        flex-direction: column;
+        width: 100%;
+        order: 2;
+    }
+
+    .about-info p {
+        font-size: 1.8rem;
+        line-height: 1.7;
+        text-align: left;
     }
 
     .dp {
         align-items: center;
-        justify-content: center
+        justify-content: center;
+        width: 100%;
+        order: 1;
+    }
+
+    .dp img {
+        max-width: 250px;
+        width: 100%;
+    }
+
+    .dp::after,
+    .dp::before {
+        width: 250px;
+        height: 250px;
     }
 
     .activeThismobiletab:before {
@@ -1842,9 +1922,45 @@ footer {
         margin-left: 0
     }
 
+    .about-section-container {
+        padding-top: 150px;
+    }
+
+    .about-section {
+        width: 90%;
+    }
+
+    .section-heading-article {
+        font-size: 2.5rem;
+    }
+
+    .sectionHeadingP {
+        width: 200px;
+    }
+
+    .info-dp-section {
+        margin-top: 40px;
+        gap: 35px;
+    }
+
+    .about-info p {
+        font-size: 1.7rem;
+        line-height: 1.6;
+        margin-bottom: 1.2rem;
+    }
+
+    .dp img {
+        max-width: 220px;
+        width: 100%;
+    }
+
     .dp::after,
     .dp::before {
         display: none
+    }
+
+    .resume-btn {
+        margin-top: 20px;
     }
 
     .logo {
@@ -1903,6 +2019,38 @@ footer {
         justify-content: flex-start
     }
 
+    .about-section-container {
+        padding-top: 120px;
+    }
+
+    .about-section {
+        width: 90%;
+    }
+
+    .section-heading-article {
+        font-size: 2.2rem;
+    }
+
+    .sectionHeadingP {
+        width: 150px;
+    }
+
+    .info-dp-section {
+        margin-top: 30px;
+        gap: 30px;
+    }
+
+    .about-info p {
+        font-size: 1.6rem;
+        line-height: 1.5;
+        margin-bottom: 1rem;
+    }
+
+    .dp img {
+        max-width: 200px;
+        width: 100%;
+    }
+
     .project-box {
         height: 550px
     }
@@ -1937,10 +2085,36 @@ footer {
         font-size: 45%
     }
 
+    .about-section-container {
+        padding-top: 100px;
+    }
+
     .about-section,
     .projects-section-div,
     .skills-section {
-        width: 80%
+        width: 85%
+    }
+
+    .section-heading-article {
+        font-size: 2rem;
+    }
+
+    .sectionHeadingP {
+        width: 120px;
+    }
+
+    .info-dp-section {
+        margin-top: 25px;
+        gap: 25px;
+    }
+
+    .about-info p {
+        font-size: 1.5rem;
+        line-height: 1.5;
+    }
+
+    .dp img {
+        max-width: 180px;
     }
 
     .info-div {
@@ -1957,8 +2131,35 @@ footer {
         font-size: 42%
     }
 
+    .about-section-container {
+        padding-top: 90px;
+    }
+
+    .about-section {
+        width: 90%;
+    }
+
+    .section-heading-article {
+        font-size: 1.8rem;
+    }
+
+    .sectionHeadingP {
+        width: 100px;
+    }
+
+    .info-dp-section {
+        margin-top: 20px;
+        gap: 20px;
+    }
+
+    .about-info p {
+        font-size: 1.4rem;
+        line-height: 1.4;
+    }
+
     .dp img {
-        width: 200px
+        max-width: 160px;
+        width: 100%;
     }
 
     .two-words {
@@ -1981,6 +2182,26 @@ footer {
 @media screen and (max-width:300px) {
     html {
         font-size: 42%
+    }
+
+    .about-section-container {
+        padding-top: 80px;
+    }
+
+    .section-heading-article {
+        font-size: 1.6rem;
+    }
+
+    .sectionHeadingP {
+        width: 80px;
+    }
+
+    .about-info p {
+        font-size: 1.3rem;
+    }
+
+    .dp img {
+        max-width: 140px;
     }
 
     .language-name article {
@@ -2015,5 +2236,32 @@ footer {
     .landing-page-container {
         height: fit-content;
         margin-top: 100px;  
+    }
+}
+
+/* Landscape orientation for mobile devices */
+@media screen and (max-width: 900px) and (orientation: landscape) {
+    .about-section-container {
+        padding-top: 100px;
+    }
+
+    .info-dp-section {
+        flex-direction: row;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .about-info {
+        width: 60%;
+        order: 1;
+    }
+
+    .dp {
+        width: 40%;
+        order: 2;
+    }
+
+    .dp img {
+        max-width: 200px;
     }
 }
