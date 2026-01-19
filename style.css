@@ -89,6 +89,21 @@ html {
     -webkit-font-smoothing: antialiased
 }
 
+/* Custom cursor (click.png) */
+html,
+body {
+    cursor: url("click.png") 12 12, auto;
+}
+
+a,
+button,
+label,
+input,
+textarea,
+select {
+    cursor: url("click.png") 12 12, pointer;
+}
+
 :root {
     cursor: default;
     --color-white: #ffffff;
@@ -151,6 +166,12 @@ html {
     border-radius: 50%;
     z-index: 9999;
     pointer-events: none
+}
+
+/* Hide the existing animated cursor circles (we use click.png instead) */
+.cursor-inner,
+.cursor-outer {
+    display: none;
 }
 
 .setting-container,
