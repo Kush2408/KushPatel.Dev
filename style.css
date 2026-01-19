@@ -60,7 +60,7 @@ footer {
 
 #GmailLogo,
 .sign svg path {
-    fill: white
+    fill: #1a1a1a
 }
 
 * {
@@ -91,22 +91,22 @@ html {
 
 :root {
     cursor: default;
-    --color-white: #fff;
-    --color-black: #000;
-    --color-dark-mode: #11111b;
-    --color-light-mode: #ece7e1;
-    --color-ddd-color: #ddd;
-    --color-gray: #c4c4c4;
-    --color-purple: #8000ff;
-    --color-light-purple: #cf59e6;
-    --color-light-blue: #6bc5f8;
-    --color-navbarBorder-dark: #e2e2e207;
-    --color-shadowDark: rgba(0, 0, 0, 0.137);
-    --static-heading-gradient-blue: #b0f3f1;
-    --static-heading-gradient-pink: #ffcfdf;
-    --tech-stack-box-first-color: #1a1a29;
-    --tech-stack-box-second-color: rgba(27, 27, 40, 0);
-    --tech-stack-box-border-color: #292929
+    --color-white: #ffffff;
+    --color-black: #1a1a1a;
+    --color-dark-mode: #f8f9fa;
+    --color-light-mode: #ffffff;
+    --color-ddd-color: #4a4a4a;
+    --color-gray: #6b6b6b;
+    --color-purple: #6366f1;
+    --color-light-purple: #8b5cf6;
+    --color-light-blue: #3b82f6;
+    --color-navbarBorder-dark: rgba(0, 0, 0, 0.08);
+    --color-shadowDark: rgba(0, 0, 0, 0.06);
+    --static-heading-gradient-blue: #3b82f6;
+    --static-heading-gradient-pink: #8b5cf6;
+    --tech-stack-box-first-color: #ffffff;
+    --tech-stack-box-second-color: rgba(255, 255, 255, 0.5);
+    --tech-stack-box-border-color: #e5e7eb
 }
 
 #hello-friend,
@@ -123,11 +123,11 @@ html {
 }
 
 ::-webkit-scrollbar-track {
-    background: #0a0a10
+    background: #f1f5f9
 }
 
 ::-webkit-scrollbar-thumb {
-    background-color: #8000ff
+    background-color: #6366f1
 }
 
 .cursor-inner {
@@ -139,7 +139,7 @@ html {
 .cursor-outer {
     width: 35px;
     height: 35px;
-    border: 2px solid #fff
+    border: 2px solid #1a1a1a
 }
 
 .cursor-inner,
@@ -174,7 +174,7 @@ html {
 
 .activeThistab:before,
 .navbar-tabs-ul li:hover:before {
-    background-color: var(--color-white);
+    background-color: var(--color-purple);
     height: 10px;
     width: 10px;
     left: -20px
@@ -321,7 +321,7 @@ header {
 }
 
 #preloader {
-    background-color: #fff;
+    background-color: #f8f9fa;
     position: fixed;
     z-index: 99999;
     justify-content: center;
@@ -346,7 +346,7 @@ noscript {
 noscript {
     justify-content: center;
     font-size: 4rem;
-    color: #fff;
+    color: #1a1a1a;
     z-index: 999999
 }
 
@@ -365,7 +365,8 @@ noscript {
     justify-content: space-between;
     z-index: 999;
     border: 1px solid var(--color-navbarBorder-dark);
-    border-radius: 50px
+    border-radius: 50px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08)
 }
 
 .navbar-tabs,
@@ -391,7 +392,7 @@ noscript {
     list-style: none;
     justify-content: flex-end;
     gap: 80px;
-    color: var(--color-white)
+    color: var(--color-black)
 }
 
 .navbar-tabs-ul li {
@@ -411,7 +412,7 @@ noscript {
 }
 
 .navbar-tabs-ul a {
-    color: var(--color-white);
+    color: var(--color-black);
     font-weight: 100
 }
 
@@ -435,11 +436,11 @@ noscript {
 }
 
 .hey {
-    color: #fff;
+    color: #1a1a1a;
     position: absolute;
     font-size: 2.5rem;
     font-weight: 300;
-    background-color: #20222e;
+    background-color: #f1f5f9;
     padding: 5px 10px;
     border-radius: 20px;
     left: 120px;
@@ -452,7 +453,7 @@ noscript {
 .about-info p,
 .activeThistab,
 .language-speak article {
-    color: var(--color-white)
+    color: var(--color-black)
 }
 
 .blob,
@@ -510,7 +511,7 @@ noscript {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #fff
+    background-color: #f1f5f9
 }
 
 .left-eye {
@@ -524,7 +525,7 @@ noscript {
 .pupil {
     width: 3.5px;
     height: 3.5px;
-    background: #241010
+    background: #1a1a1a
 }
 
 .logo:hover {
@@ -557,7 +558,7 @@ noscript {
     width: 600px;
     height: 100vh;
     filter: blur(300px);
-    opacity: .3;
+    opacity: .15;
     animation: 1s linear infinite alternate-reverse breath
 }
 
@@ -820,11 +821,11 @@ noscript {
 .letsTalkBtn-text {
     width: 100%;
     height: 100%;
-    background-color: rgba(230, 230, 230, .466);
+    background-color: rgba(255, 255, 255, 0.9);
     border: none;
     border-radius: 7px;
     backdrop-filter: blur(5px);
-    color: #000;
+    color: #1a1a1a;
     align-items: center;
     justify-content: center;
     letter-spacing: .8px
@@ -833,7 +834,7 @@ noscript {
 .cta:hover span,
 .text,
 .tooltip {
-    color: #fff
+    color: #1a1a1a
 }
 
 .resume-btn,
@@ -847,7 +848,7 @@ noscript {
     position: absolute;
     width: 100%;
     height: 100%;
-    background-image: linear-gradient(150deg, #71cbff, #8000ff);
+    background-image: linear-gradient(150deg, #3b82f6, #6366f1);
     z-index: -1;
     left: 6px;
     top: 6px;
@@ -880,8 +881,8 @@ noscript {
     border: none;
     border-radius: 50%;
     cursor: pointer;
-    box-shadow: 2px 2px 10px rgba(0, 0, 0, .199);
-    background: linear-gradient(82.3deg, #965de9 10.8%, #6358ee 94.3%);
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, .1);
+    background: linear-gradient(82.3deg, #8b5cf6 10.8%, #6366f1 94.3%);
     position: relative
 }
 
@@ -1045,11 +1046,11 @@ noscript {
 }
 
 .dp::before {
-    box-shadow: 2px 2px 0 inset #8000ff, -2px -2px 0 inset transparent
+    box-shadow: 2px 2px 0 inset #6366f1, -2px -2px 0 inset transparent
 }
 
 .dp::after {
-    box-shadow: 2px 2px 0 inset transparent, -2px -2px 0 inset #8000ff
+    box-shadow: 2px 2px 0 inset transparent, -2px -2px 0 inset #6366f1
 }
 
 .dp:hover::after {
@@ -1132,7 +1133,8 @@ noscript {
     justify-content: center;
     border-radius: 30px;
     border: 1px solid var(--tech-stack-box-border-color);
-    position: relative
+    position: relative;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05)
 }
 
 .tech-stack-box img {
@@ -1201,7 +1203,8 @@ footer {
     justify-content: space-between;
     transition-duration: .3s;
     border-radius: 30px;
-    border: 1px solid var(--tech-stack-box-border-color)
+    border: 1px solid var(--tech-stack-box-border-color);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06)
 }
 
 .info-div {
@@ -1237,13 +1240,13 @@ footer {
 }
 
 .ProjectHeading {
-    color: var(--color-white);
+    color: var(--color-black);
     font-size: 3.4rem;
     font-weight: 700
 }
 
 .ProjectDescription {
-    color: gray;
+    color: #4a4a4a;
     font-size: 1.7rem;
     font-weight: 400
 }
@@ -1264,11 +1267,11 @@ footer {
     width: 45px;
     height: auto;
     transition: .3s;
-    filter: brightness(2)
+    filter: brightness(0.8)
 }
 
 .github-redirect:hover img {
-    filter: brightness(4)
+    filter: brightness(1)
 }
 
 .cta {
@@ -1288,7 +1291,7 @@ footer {
     left: 0;
     display: block;
     border-radius: 50px;
-    background: #2b2f4e;
+    background: #e5e7eb;
     width: 45px;
     height: 45px;
     transition: .3s
@@ -1298,7 +1301,7 @@ footer {
     font-size: 1.8rem;
     font-weight: 600;
     letter-spacing: .05em;
-    color: var(--color-light-blue)
+    color: var(--color-purple)
 }
 
 .cta svg {
@@ -1307,14 +1310,14 @@ footer {
     fill: none;
     stroke-linecap: round;
     stroke-linejoin: round;
-    stroke: var(--color-light-blue);
+    stroke: var(--color-purple);
     stroke-width: 2;
     transform: translateX(-5px);
     transition: .3s
 }
 
 .cta:hover svg {
-    stroke: white;
+    stroke: #1a1a1a;
     transform: translateX(0)
 }
 
@@ -1340,15 +1343,15 @@ footer {
 
 #backtotopbutton article {
     font-size: 1.5rem;
-    color: var(--color-white);
+    color: var(--color-black);
     font-weight: 400;
     writing-mode: vertical-rl;
-    mix-blend-mode: difference
+    mix-blend-mode: normal
 }
 
 #backtotopbutton:hover {
     transform: translate(0, -20px);
-    text-decoration: line-through var(--color-white)
+    text-decoration: line-through var(--color-black)
 }
 
 footer {
@@ -1360,7 +1363,7 @@ footer {
 .footer-background {
     width: 100%;
     height: 100vh;
-    background-color: #0b0b0b;
+    background-color: #f8f9fa;
     display: flex;
     align-items: flex-end;
     justify-content: center;
@@ -1396,7 +1399,7 @@ footer {
 }
 
 .two-words {
-    color: #b3b3b3;
+    color: #6b6b6b;
     width: 100%;
     display: flex;
     align-items: center;
@@ -1432,9 +1435,9 @@ footer {
     text-decoration: none;
     padding: 10px;
     border-radius: 50%;
-    border: 2px solid #e2dede;
+    border: 2px solid #e5e7eb;
     position: relative;
-    box-shadow: 0 0 0 #8000ff inset;
+    box-shadow: 0 0 0 #6366f1 inset;
     transition-duration: .3s
 }
 
@@ -1454,7 +1457,7 @@ footer {
 .fa-copyright,
 .footer-bottom article {
     font-size: 1.5rem;
-    color: #b0b0b0
+    color: #6b6b6b
 }
 
 .logos {
@@ -1464,7 +1467,7 @@ footer {
 }
 
 .SocialHandle {
-    fill: white;
+    fill: #1a1a1a;
     width: 60%
 }
 
@@ -1473,7 +1476,7 @@ footer {
 }
 
 .social-media-container a:hover {
-    box-shadow: 0 0 50px 100px #8000ff inset;
+    box-shadow: 0 0 50px 100px #6366f1 inset;
     transition-duration: 1s;
     border: none
 }
@@ -1535,9 +1538,9 @@ footer {
 .footer-pupil {
     width: 20px;
     height: 20px;
-    background-color: #000;
+    background-color: #1a1a1a;
     border-radius: 50%;
-    border: 5px solid #413333;
+    border: 5px solid #6b6b6b;
     filter: blur(.6px)
 }
 
@@ -1565,7 +1568,7 @@ footer {
 }
 
 .footer-bottom {
-    background-color: #0b0b0b;
+    background-color: #f8f9fa;
     width: 100%;
     display: flex;
     align-items: center;
@@ -1575,7 +1578,7 @@ footer {
 }
 
 .tonechange {
-    color: #000
+    color: #1a1a1a
 }
 
 @media screen and (max-width:1920px) {
@@ -1713,10 +1716,10 @@ footer {
         text-decoration: none
     }
 
-    .activeThismobiletab,
-    .mobile-navbar-tabs-ul a {
-        color: var(--color-white)
-    }
+.activeThismobiletab,
+.mobile-navbar-tabs-ul a {
+    color: var(--color-black)
+}
 
     html {
         font-size: 55%
@@ -1744,13 +1747,13 @@ footer {
         z-index: 9998
     }
 
-    .activeThismobiletab:before,
-    .burger-bar,
-    .hamburger-animation1,
-    .hamburger-animation2,
-    .hamburger-animation3 {
-        background-color: var(--color-white)
-    }
+.activeThismobiletab:before,
+.burger-bar,
+.hamburger-animation1,
+.hamburger-animation2,
+.hamburger-animation3 {
+    background-color: var(--color-black)
+}
 
     .hamburgerbase {
         width: 80%;
@@ -1827,17 +1830,17 @@ footer {
         transition-duration: .6s
     }
 
-    .mobile-navbar-tabs-ul {
-        background-color: var(--color-dark-mode);
-        width: 100%;
-        height: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        gap: 70px;
-        box-shadow: 0 0 30px rgba(0, 0, 0, .176)
-    }
+.mobile-navbar-tabs-ul {
+    background-color: #ffffff;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 70px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, .1)
+}
 
     .mobile-navbar-tabs-li {
         text-align: center;
@@ -1901,14 +1904,15 @@ footer {
         height: 250px;
     }
 
-    .activeThismobiletab:before {
-        content: "";
-        position: absolute;
-        height: 10px;
-        width: 10px;
-        left: -20px;
-        border-radius: 50%
-    }
+.activeThismobiletab:before {
+    content: "";
+    position: absolute;
+    height: 10px;
+    width: 10px;
+    left: -20px;
+    border-radius: 50%;
+    background-color: var(--color-purple)
+}
 
     .projects-section-div {
         width: 80%
