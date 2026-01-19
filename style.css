@@ -1179,6 +1179,239 @@ footer {
     width: 100%
 }
 
+.contact-section-container {
+    padding: 150px 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+.contact-section {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center
+}
+
+.contact-card {
+    width: 100%;
+    margin-top: 35px;
+    border-radius: 30px;
+    border: 1px solid var(--tech-stack-box-border-color);
+    background-image: linear-gradient(to bottom right, var(--tech-stack-box-first-color), var(--tech-stack-box-second-color));
+    box-shadow: 0 10px 35px rgba(0, 0, 0, 0.08);
+    display: grid;
+    grid-template-columns: 1fr 1.05fr;
+    overflow: hidden;
+    position: relative
+}
+
+.contact-card::before {
+    content: "";
+    position: absolute;
+    inset: -2px;
+    background: radial-gradient(800px 200px at 20% 10%, rgba(99, 102, 241, 0.18), transparent 60%),
+        radial-gradient(700px 220px at 80% 90%, rgba(59, 130, 246, 0.12), transparent 60%);
+    pointer-events: none
+}
+
+.contact-visual,
+.contact-form-wrap {
+    position: relative;
+    z-index: 1
+}
+
+.contact-visual {
+    padding: 34px;
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+.contact-visual-glow {
+    position: absolute;
+    width: 70%;
+    height: 70%;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(99, 102, 241, 0.16), rgba(59, 130, 246, 0.08), transparent 60%);
+    filter: blur(28px);
+    animation: 6s ease-in-out infinite contactGlow
+}
+
+@keyframes contactGlow {
+    0%,
+    100% {
+        transform: translateY(0) scale(1);
+        opacity: .85
+    }
+
+    50% {
+        transform: translateY(-10px) scale(1.03);
+        opacity: 1
+    }
+}
+
+.contact-visual-img {
+    width: 100%;
+    max-width: 420px;
+    height: auto;
+    border-radius: 22px;
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.10);
+    transform: translateY(0);
+    transition: transform .35s ease, box-shadow .35s ease
+}
+
+.contact-card:hover .contact-visual-img {
+    transform: translateY(-6px);
+    box-shadow: 0 18px 45px rgba(0, 0, 0, 0.12)
+}
+
+.contact-form-wrap {
+    padding: 40px 40px 40px 10px
+}
+
+.contact-kicker {
+    font-family: fira code;
+    font-size: 1.35rem;
+    color: var(--color-purple);
+    letter-spacing: .6px
+}
+
+.contact-title {
+    margin-top: 10px;
+    font-size: 3.2rem;
+    font-weight: 800;
+    color: var(--color-black)
+}
+
+.contact-subtitle {
+    margin-top: 10px;
+    color: var(--color-ddd-color);
+    font-size: 1.7rem;
+    line-height: 1.7
+}
+
+.contact-form {
+    width: 100%;
+    margin-top: 22px
+}
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+    width: 100%;
+    margin-bottom: 16px
+}
+
+.contact-field {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 14px
+}
+
+.contact-field label {
+    font-size: 1.35rem;
+    color: var(--color-black);
+    font-family: fira code
+}
+
+.contact-field input,
+.contact-field textarea {
+    width: 100%;
+    padding: 14px 14px;
+    border-radius: 14px;
+    border: 1px solid var(--tech-stack-box-border-color);
+    background-color: rgba(255, 255, 255, 0.85);
+    color: var(--color-black);
+    outline: none;
+    font-size: 1.6rem;
+    transition: box-shadow .2s ease, border-color .2s ease, transform .2s ease
+}
+
+.contact-field textarea {
+    resize: vertical;
+    min-height: 140px
+}
+
+.contact-field input:focus,
+.contact-field textarea:focus {
+    border-color: rgba(99, 102, 241, 0.7);
+    box-shadow: 0 0 0 4px rgba(99, 102, 241, 0.14);
+    transform: translateY(-1px)
+}
+
+.contact-field input::placeholder,
+.contact-field textarea::placeholder {
+    color: rgba(107, 107, 107, .85)
+}
+
+.contact-actions {
+    width: 100%;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap
+}
+
+.contact-submit-btn {
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    background: transparent
+}
+
+.contact-submit-text {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 46px;
+    padding: 0 18px;
+    border-radius: 14px;
+    background-image: linear-gradient(150deg, #3b82f6, #6366f1);
+    color: #fff;
+    font-size: 1.6rem;
+    font-weight: 800;
+    letter-spacing: .3px;
+    box-shadow: 0 10px 25px rgba(99, 102, 241, 0.22);
+    transition: transform .2s ease, box-shadow .2s ease
+}
+
+.contact-submit-btn:hover .contact-submit-text {
+    transform: translateY(-2px);
+    box-shadow: 0 14px 30px rgba(99, 102, 241, 0.28)
+}
+
+.contact-submit-btn:active .contact-submit-text {
+    transform: translateY(0)
+}
+
+.contact-alt {
+    color: var(--color-purple);
+    font-size: 1.5rem;
+    text-decoration: none;
+    font-family: fira code
+}
+
+.contact-alt:hover {
+    color: var(--color-black)
+}
+
+.contact-hidden {
+    position: absolute;
+    left: -10000px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden
+}
+
 .project-boxes-div {
     width: 100%;
     height: fit-content;
@@ -1632,6 +1865,10 @@ footer {
         justify-content: center
     }
 
+    .contact-section {
+        width: 80%
+    }
+
     .info-dp-section {
         gap: 30px;
     }
@@ -1932,6 +2169,26 @@ footer {
     .image-div {
         padding: 0 0 0 80px
     }
+
+    .contact-section {
+        width: 85%
+    }
+
+    .contact-card {
+        grid-template-columns: 1fr
+    }
+
+    .contact-form-wrap {
+        padding: 0 34px 34px 34px
+    }
+
+    .contact-visual {
+        padding: 34px 34px 10px 34px
+    }
+
+    .contact-grid {
+        grid-template-columns: 1fr
+    }
 }
 
 @media screen and (max-width:768px) {
@@ -2143,6 +2400,14 @@ footer {
     .projects-section-div,
     .skills-section {
         width: 85%
+    }
+
+    .contact-section {
+        width: 85%
+    }
+
+    .contact-title {
+        font-size: 2.7rem
     }
 
     .section-heading-article {

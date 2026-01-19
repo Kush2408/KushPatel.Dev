@@ -92,6 +92,12 @@
               &#60;/Projects&#62;
             </a>
           </li>
+
+          <li class="contact" class="navbar-tabs-li" data-aos="fade-down" data-aos-delay="900">
+            <a href="#contact" aria-label="contact menu button">
+              &#60;/Contact&#62;
+            </a>
+          </li>
         </ul>
       </div>
       <!-- navbar tabs ends -->
@@ -133,6 +139,12 @@
         <li id="projects-mobile-tab" class="mobile-navbar-tabs-li projects" onclick="hidemenubyli()">
           <a href="#projects" tabindex="0" aria-label="projects menu button">
             &#60;/Projects&#62;
+          </a>
+        </li>
+
+        <li id="contact-mobile-tab" class="mobile-navbar-tabs-li contact" onclick="hidemenubyli()">
+          <a href="#contact" tabindex="0" aria-label="contact menu button">
+            &#60;/Contact&#62;
           </a>
         </li>
       </ul>
@@ -434,6 +446,74 @@
                   src="https://github.com/user-attachments/assets/e3721769-5b86-44b8-bab7-197c8ae6fdfb" />
               </div>
             </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact-section-container" id="contact">
+      <div class="contact-section">
+        <div class="section-heading" data-aos="fade-up">
+          <h2 class="section-heading-article" tabindex="0" aria-label="Contact heading">
+            &#60;/Contact&#62;
+          </h2>
+          <p class="sectionHeadingP"></p>
+        </div>
+
+        <div class="contact-card">
+          <div class="contact-visual" data-aos="fade-right" data-aos-delay="100">
+            <div class="contact-visual-glow"></div>
+            <img src="src/png/Portfolio.png" class="contact-visual-img" alt="Working illustration" />
+          </div>
+
+          <div class="contact-form-wrap" data-aos="fade-left" data-aos-delay="150">
+            <p class="contact-kicker" tabindex="0">Let’s build something great together.</p>
+            <h3 class="contact-title" tabindex="0">Contact me</h3>
+            <p class="contact-subtitle" tabindex="0">
+              Send a message and I’ll reply as soon as possible.
+            </p>
+
+            <form class="contact-form" name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field"
+              action="/thank-you.html">
+              <input type="hidden" name="form-name" value="contact" />
+              <p class="contact-hidden">
+                <label>Don’t fill this out if you’re human: <input name="bot-field" /></label>
+              </p>
+              <div class="contact-grid">
+                <div class="contact-field">
+                  <label for="contact-name">Name</label>
+                  <input id="contact-name" name="name" type="text" autocomplete="name" required
+                    placeholder="Your name" />
+                </div>
+
+                <div class="contact-field">
+                  <label for="contact-email">Email</label>
+                  <input id="contact-email" name="email" type="email" autocomplete="email" required
+                    placeholder="your@email.com" />
+                </div>
+              </div>
+
+              <div class="contact-field">
+                <label for="contact-subject">Subject</label>
+                <input id="contact-subject" name="subject" type="text" autocomplete="off" required
+                  placeholder="Project / Collaboration / Hiring" />
+              </div>
+
+              <div class="contact-field">
+                <label for="contact-message">Message</label>
+                <textarea id="contact-message" name="message" rows="6" required
+                  placeholder="Tell me about your idea..."></textarea>
+              </div>
+
+              <div class="contact-actions">
+                <button type="submit" class="contact-submit-btn">
+                  <span class="contact-submit-text">Send Message</span>
+                </button>
+                <a class="contact-alt" href="mailto:pkush654@gmail.com" aria-label="Email me directly">
+                  Or email me directly
+                </a>
+              </div>
+            </form>
           </div>
         </div>
       </div>
